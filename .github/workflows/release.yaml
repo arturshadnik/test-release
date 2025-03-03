@@ -16,7 +16,7 @@ jobs:
     permissions:
       contents: write  # for google-github-actions/release-please-action to create release commit
       pull-requests: write  # for google-github-actions/release-please-action to create release PR
-    runs-on: [self-hosted, Linux, X64, spectrocloud-labs]
+    runs-on: ubuntu-latest
     outputs:
       package1_release_created: ${{ steps.release.outputs.package1--release_created }}
       package1_tag_name: ${{ steps.release.outputs.package1--tag_name }}
