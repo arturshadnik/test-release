@@ -30,4 +30,4 @@ jobs:
         id: release
         with:
           include-component-in-tag: true
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PAT }}
